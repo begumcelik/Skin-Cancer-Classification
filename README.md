@@ -1,8 +1,9 @@
-# Skin-Cancer-Classification
+# Skin Cancer Classification
 
 The purpose of the project is to classify five different types of skin cancer given the skin lesion dataset. The class labels are Melanoma (MEL), Melanocytic nevus (NV), Basal cell carcinoma (BCC), Actinic keratosis (AK), and Benign keratosis (BKL).
 Firstly, the data file which contains images within the image IDs was downloaded and right after unzipped in order to extract photos using PyDrive without loss. Photos were loaded into an image array with respect to their IDs given in the train.csv file. After the realization of the difference in image sizes, the target input shape was determined and all images were resized before they were added to the image array. Normalization was also performed in this step. Related to the available RAM limitations of the notebooks, there was a trade-off between image shape and image resolution. In that case, the visualization of the dataset played an important role in observing the image quality related to input shape and images were used as high quality as possible within the given RAM usage. In addition to those, the distribution of samples per class was visualized in order to increase knowledge of the given dataset. As a result, an imbalance in the dataset was realized due to the big amount of data corresponding to class 2 which means melanocytic nevus cancer type. In training data, instance counts per class are shown below:
 
+![alt text](Screen Shot 2021-05-04 at 15.29.33.png)
 
 
 2	: 4489
@@ -32,6 +33,7 @@ One of the difficulties that are dealt with is RAM insufficiency. During the tri
 Another challenge in the process is using the images with their actual sizes. As it is observed, most of the images have dimensions bigger than 500x500. In order to have a more comprehensive machine learning model, which has increased performance, the sizes of the images are tried to preserve as much as possible. However, due to the memory issues, the trial of using the actual image sizes ended with a failure.
 
 # Conclusion
+
 Finally, the model has given 64% test accuracy in validation data and %61.8 accuracy on test.csv which is higher than many of the medical based tests. To reach the aim of increasing the accuracy, cross-validation can be implemented but it requires a higher amount of RAM. Moreover, there is no doubt that with more training data, the model would be more accurate.
 
 # Contributers
