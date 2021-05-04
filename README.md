@@ -6,17 +6,19 @@ Firstly, the data file which contains images within the image IDs was downloaded
 ![alt text](https://github.com/begumcelik/Skin-Cancer-Classification/blob/main/Screen%20Shot%202021-05-04%20at%2015.29.33.png)
 
 
-2	: 4489
-1	: 2204
-3	: 1592
-5	: 1288
-4 : 427
+         2	: 4489
+         1	: 2204
+         3	: 1592
+         5	: 1288
+         4 : 427
 
 
 
 
 Secondly, the need for image augmentation has emerged after the realization of an imbalanced dataset. To reach the aim of increasing the number of images that do not belong to the second class, rotation, flip from left to right, and upside down and random noise functions of skimage library were used. Therefore, images had reiterated with its variations in order to balance the dataset. The number of images per class in the augmented dataset is given below:
-Augmented dataset shape({1: 11020, 3: 7960, 5: 6440, 2: 4489, 4: 2135})
+
+               Augmented dataset shape({1: 11020, 3: 7960, 5: 6440, 2: 4489, 4: 2135})
+![alt text](https://github.com/begumcelik/Skin-Cancer-Classification/blob/main/Screen%20Shot%202021-05-04%20at%2015.29.48.png)
 
 After that this new data set was split into two as training data and validation data. Training data contains 80% of the dataset and validation is 20%.
 The process is continued with searching for image processors. As a library, Tensorflow was initially preferred. Due to the big amount of errors, Keras library is replaced with the Tensorflow. 
