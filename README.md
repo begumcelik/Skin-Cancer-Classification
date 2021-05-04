@@ -38,7 +38,7 @@ Another challenge in the process is using the images with their actual sizes. As
 
 Finally, the model has given 64% test accuracy in validation data and %61.8 accuracy on test.csv which is higher than many of the medical based tests. To reach the aim of increasing the accuracy, cross-validation can be implemented but it requires a higher amount of RAM. Moreover, there is no doubt that with more training data, the model would be more accurate.
 
-# Contributers
+# Contributors
 Begüm Çelik	
 
 Ekin Oskay
