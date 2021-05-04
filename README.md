@@ -36,6 +36,9 @@ Finally, the model has given 64% test accuracy in validation data and %61.8 accu
 
 # Contributers
 Begüm Çelik	
+
 Ekin Oskay
+
 Ece Alptekin
+
 Güren İçim
