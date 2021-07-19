@@ -28,21 +28,23 @@ In the CNN model, there were 3 2D Convolution layers and 2 dense layers. The inp
 
 After the model is implemented, it is tried with both original data and the augmented data. The accuracy with the original data is higher than the augmented dataset. It may be caused by the overuse of the image samples. 
  
-# Challenges
+## Challenges
 
 One of the difficulties that are dealt with is RAM insufficiency. During the trial of k fold the size on n taken as 10. K-Fold was tried in Google Colaboratory with GPU and also TPU. However, the result of this cross-validation stays unfinished due to high memory requiring calculations. Nonetheless, it is expected to increase the validation and test accuracy by using cross-validation.
 
 Another challenge in the process is using the images with their actual sizes. As it is observed, most of the images have dimensions bigger than 500x500. In order to have a more comprehensive machine learning model, which has increased performance, the sizes of the images are tried to preserve as much as possible. However, due to the memory issues, the trial of using the actual image sizes ended with a failure.
 
-# Conclusion
+## Conclusion
 
 Finally, the model has given 64% test accuracy in validation data and %61.8 accuracy on test.csv which is higher than many of the medical based tests. To reach the aim of increasing the accuracy, cross-validation can be implemented but it requires a higher amount of RAM. Moreover, there is no doubt that with more training data, the model would be more accurate.
 
-# Contributors
-Begüm Çelik	
+## Contributors
 
-Ekin Oskay
+- Begüm Çelik	
 
-Ece Alptekin
+- Ece Alptekin
 
-Güren İçim
+- Ekin Oskay
+
+- Güren İçim
+
