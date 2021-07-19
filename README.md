@@ -11,7 +11,7 @@ Firstly, the data file which contains images within the image IDs was downloaded
          1	: 2204
          3	: 1592
          5	: 1288
-         4        : 427
+         4   : 427
 
 
 
